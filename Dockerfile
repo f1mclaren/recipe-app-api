@@ -1,4 +1,4 @@
-FROM python:3.7.2-alpine3.9
+FROM python:3.7.3-alpine3.9
 LABEL maintainer="Korean Scrutineers Club"
 
 ENV PYTHONUNBUFFERED 1
@@ -12,3 +12,5 @@ COPY ./app /app
 
 RUN adduser -D user
 USER user
+
+EXPOSE 8000
